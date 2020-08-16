@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Survey Form</title>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Customer Feedback Survey Form</h1>
+            <p id="description">Please let us know about your experience with our products and service.</p>
+        </header> 
+            <div class="container">
+            <div id="form-box">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email Address</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+                </div> 
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></span></label>
+                    <input type="number" name="age" id="number" min="15" max="99" class="form-control" placeholder="Age" />
+                </div>
+                <div class="form-group">
+                    <p>Is this the first time you are using our products and services?</p>
+                    <select id="dropdown" name="answer" class="form-control" required>
+                        <option disabled selected value>Choose an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No, I have used them before</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend it to your friends and colleagues?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Do you have any suggestions to improve our products and service?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestion here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <p>Came to know us from:</p>
+                    <label>
+                        <input name="prefer" value="friends" type="checkbox" class="input-checkbox" />Friends
+                    </label>
+                    <label>
+                        <input name="prefer" value="colleagues" type="checkbox" class="input-checkbox" />Colleagues
+                    </label>
+                    <label>
+                        <input name="prefer" value="news-papers" type="checkbox" class="input-checkbox" />News papers
+                    </label>
+                    <label>
+                        <input name="prefer" value="website" type="checkbox" class="input-checkbox" />Website
+                    </label>
+                    <label>
+                        <input name="prefer" value="other" type="checkbox" class="input-checkbox" />Other
+                    </label>
+                    <p>Thank you for completing our survey.</p>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
